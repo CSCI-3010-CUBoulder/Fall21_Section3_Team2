@@ -6,5 +6,5 @@ all: test
 clean:
 	rm test
 
-test: test.cpp
+test: example.cpp
 	$(CXX) $(CXXFLAGS) example.cpp -o test
