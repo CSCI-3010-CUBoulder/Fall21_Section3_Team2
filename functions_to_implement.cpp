@@ -1,5 +1,8 @@
 /* String functions section */
-
+#include <iostream>
+#include <vector>
+#include <string>
+#include "catch.hpp"
 // Splits a single string on separator into a vector of strings
 std::vector<std::string> Split(std::string whole, std::string separator);
 
@@ -24,11 +27,28 @@ int RemoveTwos(int original);
 std::vector<int> MultiplesFilter(std::vector<int>, int divides_by);
 
 // returns a vector with true for even numbers and false for odd numbers
-std::vector<bool> EvenMask(std::vector<int>);
+std::vector<bool> EvenMask(std::vector<int> v)
+{
+    std::vector<bool> resultant;
+    for(auto i : v)
+        if(i%2==0)
+            resultant.push_back(true);
+        else
+            resultant.push_back(false);
+    return resultant;
+}
 
 // returns a vector with true for odd numbers and false for even numbers
-std::vector<bool> OddMask(std::vector<int>);
-
+std::vector<bool> OddMask(std::vector<int> v)
+{
+    std::vector<bool> resultant;
+    for(auto i : v)
+        if(i%2==0)
+            resultant.push_back(false);
+        else
+            resultant.push_back(true);
+    return resultant;
+}
 // Sums all numbers in a vector and returns the resulting value
 int Sum(std::vector<int> nums);
 
@@ -52,10 +72,7 @@ std::vector<int> SquaresUntil(int n);
 int NthFibonacci(int n);
 
 // takes an int, n, and returns the factorial of that int (n!)
-int Factorial(int n)
-{
-    return n!;
-}
+int Factorial(int n);
 
 // returns -1 if the number is negative and 1 if positive
 int Sign(int num)
@@ -105,7 +122,16 @@ std::vector<double> VectorTimesN(std::vector<double> v, double n);
 std::vector<double> Multiples(double n, double m);
 
 // returns -1 if the number is negative and 1 if positive
-double Sign(double num);
+double Sign(double num){
+    if(num <0)
+    {
+        return -1;
+    }
+    else
+    {
+        return 1;
+    }
+}
 
 
 // adds n to each element of the vector
