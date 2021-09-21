@@ -1,5 +1,5 @@
 language: cpp
 #before_script: cd utility_functions
 script:
-  - g++ -std=c++17 functions_to_implement.cpp -o test
+  - g++ -std=c++17 functions_to_implement.cpp example.cpp -o test
   - ./test
