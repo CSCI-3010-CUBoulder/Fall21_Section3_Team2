@@ -1,4 +1,6 @@
- #include "catch.hpp"
+
+#define CATCH_CONFIG_MAIN
+#include "catch.hpp"
 #include "functions_to_implement.cpp"
 #include <iostream>
 #include <vector>
