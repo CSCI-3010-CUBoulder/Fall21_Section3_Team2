@@ -13,5 +13,5 @@ TEST_CASE ( "FACTORIALS ARE COMPUTED","[factorial]") {
 }
 TEST_CASE("EVEN MASK TEST, "[evenMask]"){
      CHECK(OddMask(1) == 1);
-     REQUIRE(OddMask(2) ==0)
+     REQUIRE(OddMask(2) ==0);
 }
