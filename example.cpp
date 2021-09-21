@@ -5,7 +5,8 @@
 #include <vector>
 
 TEST_CASTE ( "FACTORIALS ARE COMPUTED","[factorial]") {
-  REQUIRE(Factorial(0)==0);
+  CHECK (Factorial(0)==0);
+  REQUIRE(Factorial(0)==1);
   REQUIRE(Factorial(1)==1);
   
   
