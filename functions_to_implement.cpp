@@ -158,5 +158,5 @@ std::vector<double> SubtractN(std::vector<double>, double n);
 
 int main()
 {
-    return 1;
+    return 0;
 }
