@@ -32,7 +32,7 @@ std::vector<bool> EvenMask(std::vector<int> v)
     std::vector<bool> resultant;
     for(auto i : v)
         if(i%2==0)
-            resultant.push_back(true)
+            resultant.push_back(true);
         else
             resultant.push_back(false);
     return resultant;
@@ -44,7 +44,7 @@ std::vector<bool> OddMask(std::vector<int> v)
     std::vector<bool> resultant;
     for(auto i : v)
         if(i%2==0)
-            resultant.push_back(false)
+            resultant.push_back(false);
         else
             resultant.push_back(true);
     return resultant;
@@ -74,7 +74,10 @@ int NthFibonacci(int n);
 // takes an int, n, and returns the factorial of that int (n!)
 int Factorial(int n)
 {
-    return n!;
+    if(n==0)
+        return 1;
+    else
+        return(n * Factorial(n-1));
 }
 
 // returns -1 if the number is negative and 1 if positive
