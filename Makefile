@@ -7,4 +7,4 @@ clean:
 	rm test
 
 test: test.cpp
-	$(CXX) $(CXXFLAGS) test.cpp -o test
+	$(CXX) $(CXXFLAGS) example.cpp -o test
