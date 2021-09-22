@@ -18,10 +18,10 @@ TEST_CASE ("Check an integers parity", "[Sign]"){
     REQUIRE(Sign(0) == 1);
 }
 
+std::vector<int> v = {1,2,3,4,5};
+std::vector<int> v2 = {2,4};
 
 TEST_CASE("EVEN MASK TEST", "[evenMask]"){
-     std::vector<int> v = {1,2,3,4,5};
-     std::vector<int> v2 = {2,4};
      CHECK(OddMask(v)) == v2);
 }
 
