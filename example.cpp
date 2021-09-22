@@ -4,6 +4,13 @@
 #include "functions_to_implement.cpp"
 #include <vector>
 
+
+TEST_CASE ("Fibonacci Sequence", "[NthFibonacci]"){
+    REQUIRE(NthFibonacci(1) == 1);
+    REQUIRE(NthFibonacci(8) == 34);
+    REQUIRE(NthFibonacci(5) == 8);
+}
+
 TEST_CASE ( "FACTORIALS ARE COMPUTED","[factorial]") {
   CHECK (Factorial(0)==1);
   REQUIRE(Factorial(0)==1);
@@ -24,4 +31,3 @@ std::vector<bool> v2 = {false,true,false,true,false};
 TEST_CASE("EVEN MASK TEST", "[evenMask]"){
      CHECK(EvenMask(v) == v2);
 }
-
