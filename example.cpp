@@ -8,7 +8,7 @@ TEST_CASE ( "FACTORIALS ARE COMPUTED","[factorial]") {
   CHECK (Factorial(0)==0);
   REQUIRE(Factorial(0)==1);
   REQUIRE(Factorial(1)==1);
-  
+}
   
 TEST_CASE ("Check an integers parity", "[Sign]"){
     REQUIRE(Sign(1) == 1);
@@ -18,8 +18,6 @@ TEST_CASE ("Check an integers parity", "[Sign]"){
     REQUIRE(Sign(0) == 1);
 }
 
-  
-}
 
 TEST_CASE("EVEN MASK TEST", "[evenMask]"){
      CHECK(OddMask(1) == 1);
