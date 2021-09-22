@@ -5,7 +5,7 @@
 #include <vector>
 
 TEST_CASE ( "FACTORIALS ARE COMPUTED","[factorial]") {
-  CHECK (Factorial(0)==0);
+  CHECK (Factorial(0)==1);
   REQUIRE(Factorial(0)==1);
   REQUIRE(Factorial(1)==1);
 }
@@ -22,6 +22,6 @@ std::vector<int> v = {1,2,3,4,5};
 std::vector<bool> v2 = {false,true,false,true,false};
 
 TEST_CASE("EVEN MASK TEST", "[evenMask]"){
-     CHECK(OddMask(v) == v2);
+     CHECK(EvenMask(v) == v2);
 }
 
