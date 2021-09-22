@@ -19,7 +19,7 @@ TEST_CASE ("Check an integers parity", "[Sign]"){
 }
 
 std::vector<int> v = {1,2,3,4,5};
-std::vector<int> v2 = {2,4};
+std::vector<bool> v2 = {false,true,false,true,false};
 
 TEST_CASE("EVEN MASK TEST", "[evenMask]"){
      CHECK(OddMask(v)) == v2);
