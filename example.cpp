@@ -10,8 +10,7 @@ TEST_CASE ( "FACTORIALS ARE COMPUTED","[factorial]") {
   REQUIRE(Factorial(1)==1);
   
   
-TEST_CASE ("Check an integers parity", "[Sign]")
-{
+TEST_CASE ("Check an integers parity", "[Sign]"){
     REQUIRE(Sign(1) == 1);
     REQUIRE(Sign(-1) == -1);
     REQUIRE(Sign(2) == 1);
