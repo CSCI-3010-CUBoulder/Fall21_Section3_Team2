@@ -71,7 +71,7 @@ int NthFibonacci(int n)
     if(n <= 1)
         return 1;
     else
-        NthFibonacci(n-1) + NthFibonacci(n-2);
+        return NthFibonacci(n-1) + NthFibonacci(n-2);
 }
 
 // takes an int, n, and returns the factorial of that int (n!)
