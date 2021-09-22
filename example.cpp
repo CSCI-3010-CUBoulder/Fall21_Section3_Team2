@@ -22,6 +22,6 @@ std::vector<int> v = {1,2,3,4,5};
 std::vector<bool> v2 = {false,true,false,true,false};
 
 TEST_CASE("EVEN MASK TEST", "[evenMask]"){
-     CHECK(OddMask(v)) == v2);
+     CHECK(OddMask(v) == v2);
 }
 
